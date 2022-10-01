@@ -1,9 +1,9 @@
 # keep-Aps
 * Это простое приложение заметок
-* разработаное на языке Kotlin
-* с приминением библиотеки room
-* приложение будет обновляться
-* и в нем будут появляться новые функции!
+* Разработаное на языке Kotlin
+* С приминением библиотеки room
+* Приложение будет регулярно обновляться
+* Будут появляться новые функции!
 
 ---
 
@@ -14,10 +14,10 @@
 ---
 
 * This is a simple note taking app
-* developed in Kotlin language
-* with application library number
-* the application will be attractive
-* and it comes with new features!
+* Developed in Kotlin language
+* Using the room library
+* App will be updated regularly
+* New features to come!
 
 ___
 
