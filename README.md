@@ -23,3 +23,5 @@ ___
 
 The current version of the application is 0.0.1 *__there are bugs and shortcomings__
 [Donwload](https://t.me/c/1851606478/2)
+
+---
