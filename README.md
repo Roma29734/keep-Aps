@@ -7,9 +7,9 @@
 
 ---
 
-Актуальная версия приложения 0.0.1 *__имеються баги и недочеты__
-[Скачать](https://t.me/c/1851606478/2) 
-
+Актуальная версия приложения 0.0.2 *__имеются недочеты по навигации__
+Обновлен интерфейс, добавлена функция избранное
+[Скачать](https://t.me/apkPublicPrograms/12) 
 
 ---
 
@@ -21,7 +21,8 @@
 
 ___
 
-The current version of the application is 0.0.1 *__there are bugs and shortcomings__
-[Donwload](https://t.me/c/1851606478/2)
+The current version of the application is 0.0.2 *__There are some bugs in navigation.__
+Updated interface, added favorites function
+[Donwload](https://t.me/apkPublicPrograms/12)
 
 ---
