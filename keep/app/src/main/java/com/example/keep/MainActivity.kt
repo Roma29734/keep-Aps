@@ -10,7 +10,6 @@ import androidx.navigation.findNavController
 
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
-import com.example.keep.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -22,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        setSupportActionBar(Mytoolbar)
+        setSupportActionBar(Mytoolbar)
 
         // Get the navigation host fragment from this Activity
         val navHostFragment = supportFragmentManager

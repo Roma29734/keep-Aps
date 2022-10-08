@@ -8,7 +8,7 @@
     android:background="@color/blackNight">
 
     <SearchView
-        android:id="@+id/CountrysearchView"
+        android:id="@+id/CountrySearchView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -17,8 +17,7 @@
         android:background="@color/cardBlackNight"
         android:queryHint="Ишите свои заметки"
         android:iconifiedByDefault="false"
-        app:theme="@style/SearchViewStyle"
-        android:searchIcon="@drawable/ic__search"/>
+        app:theme="@style/SearchViewStyle" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/searchRecyclerView"
@@ -28,7 +27,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CountrysearchView"
+        app:layout_constraintTop_toBottomOf="@+id/CountrySearchView"
         />
 
 

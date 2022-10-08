@@ -22,4 +22,9 @@ class UserRepository(private val userDao: UserDao) {
      fun searchDatabase(searchQuery: String): Flow<List<User>> {
        return userDao.searchDatabase(searchQuery)
     }
+
+    val readFavouritesData: LiveData<List<User>> = userDao.readFavouritesData()
+//    fun readFavouritesData(user: User): LiveData<List<User>> {
+//        return userDao.readFavouritesData(user)
+//    }
 }

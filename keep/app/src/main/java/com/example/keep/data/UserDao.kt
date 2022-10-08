@@ -23,4 +23,9 @@ interface UserDao {
     @Query("SELECT * FROM user_table WHERE title LIKE :searchQuery OR subTitle LIKE :searchQuery")
     fun searchDatabase(searchQuery: String) : Flow<List<User>>
 
+//    @Query("SELECT * FROM user_table WHERE favourites = 1 ORDER BY id ASC")
+//    fun readFavouritesData(user: User): LiveData<List<User>>
+    @Query("SELECT * FROM user_table WHERE favourites = 1 ORDER BY id ASC")
+    fun readFavouritesData(): LiveData<List<User>>
+
 }

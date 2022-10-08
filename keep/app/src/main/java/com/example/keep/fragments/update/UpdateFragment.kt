@@ -44,27 +44,12 @@ class UpdateFragment : Fragment() {
         view.updateTitle.setText(args.currentUser.title)
         view.updateSubTitle.setText(args.currentUser.subTitle)
 
-
-
         setHasOptionsMenu(true)
-
 
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        val buttonText : TextView = view.findViewById(R.id.textFavourites)
-
-        buttonText.setOnClickListener {
-            if(buttonText.text == "добавить в избранное") {
-                buttonText.text = "Находиться в избранном"
-            } else {
-                buttonText.text = "добавить в избранное"
-            }
-
-        }
 
     }
 
@@ -72,10 +57,9 @@ class UpdateFragment : Fragment() {
         val title = updateTitle.text.toString()
         val subTitle = updateSubTitle.text.toString()
 
-        var favourites: Boolean = textFavourites.text == "Находиться в избранном"
 
         if(inputCheck(title, subTitle)) {
-            val update = User(args.currentUser.id, title, subTitle, favourites)
+            val update = User(args.currentUser.id, title, subTitle, args.currentUser.favourites)
 
             mUserViewModel.updateUser(update)
         }
