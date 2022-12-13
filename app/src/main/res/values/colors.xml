@@ -8,11 +8,15 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="backround">#E8E8E8</color>
-    <color name="firstcolor" >#CFCFCF</color>
+    <color name="firstcolor">#CFCFCF</color>
     <color name="blackNight">#15141F</color>
     <color name="greyMain">#B5B5B5</color>
     <color name="cardBlackNight">#20202C</color>
     <color name="actionbar_text_color">#ffffff</color>
     <color name="BottomBar">#252531</color>
     <color name="Red">#E80C0C</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
 </resources>

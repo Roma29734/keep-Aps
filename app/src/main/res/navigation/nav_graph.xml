@@ -3,69 +3,53 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/homeFragment">
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.keep.fragments.main.MainFragment"
+        android:name="com.example.keep.ui.fragments.main.MainFragment"
         android:label="Твои заметки"
-        tools:layout="@layout/fragment_main" >
-        <action
-            android:id="@+id/action_mainFragment_to_addFragment"
-            app:destination="@id/addFragment" />
-        <action
-            android:id="@+id/action_mainFragment_to_updateFragment"
-            app:destination="@id/updateFragment" />
-        <action
-            android:id="@+id/action_mainFragment_to_favouritesFragment"
-            app:destination="@id/favouritesFragment"
-            app:enterAnim="@anim/nav_default_pop_enter_anim"
-            app:exitAnim="@anim/nav_default_pop_exit_anim"
-            app:popEnterAnim="@anim/nav_default_enter_anim" />
-        <action
-            android:id="@+id/action_mainFragment_to_searchFragment"
-            app:destination="@id/searchFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_main" />
     <fragment
         android:id="@+id/addFragment"
-        android:name="com.example.keep.fragments.add.AddFragment"
+        android:name="com.example.keep.ui.fragments.add.AddFragment"
         android:label=""
-        tools:layout="@layout/fragment_add" >
-        <action
-            android:id="@+id/action_addFragment_to_mainFragment"
-            app:destination="@id/mainFragment"
-            app:popUpTo="@id/mainFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
+        tools:layout="@layout/fragment_add" />
     <fragment
         android:id="@+id/updateFragment"
-        android:name="com.example.keep.fragments.update.UpdateFragment"
+        android:name="com.example.keep.ui.fragments.update.UpdateFragment"
         android:label=""
         tools:layout="@layout/fragment_update" >
         <argument
             android:name="currentUser"
-            app:argType="com.example.keep.data.User" />
-        <action
-            android:id="@+id/action_updateFragment_to_mainFragment"
-            app:destination="@id/mainFragment"
-            app:popUpTo="@id/mainFragment"
-            app:popUpToInclusive="true" />
+            app:argType="com.example.keep.data.dao.User" />
     </fragment>
     <fragment
         android:id="@+id/favouritesFragment"
-        android:name="com.example.keep.fragments.favourites.FavouritesFragment"
+        android:name="com.example.keep.ui.fragments.favourites.FavouritesFragment"
         android:label="Избранное"
-        tools:layout="@layout/fragment_favourites" >
-        <action
-            android:id="@+id/action_favouritesFragment_to_updateFragment"
-            app:destination="@id/updateFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_favourites" />
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.example.keep.fragments.search.SearchFragment"
+        android:name="com.example.keep.ui.fragments.search.SearchFragment"
         android:label="Поиск"
         tools:layout="@layout/fragment_search" >
         <action
             android:id="@+id/action_searchFragment_to_updateFragment"
             app:destination="@id/updateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.keep.ui.fragments.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
     </fragment>
 </navigation>

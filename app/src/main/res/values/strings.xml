@@ -5,4 +5,9 @@
     <string name="your_keep">Твои заметки</string>
     <string name="header">Заголовок</string>
     <string name="text">Текст</string>
+    <string name="text_search">Ишите свои заметки</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
 </resources>
